@@ -1,0 +1,44 @@
+<% include partials\header%>
+
+<div class="containertopic">
+
+<div class="showbody">
+<h4 class="topicplace"> <%=photo.name %> </h4>
+<img src="<%= photo.image %>"  >
+
+
+
+<p><%= photo.desc %> </p>
+ </div>           
+  <%photo.comments.forEach(function(comment){%>
+      <p>
+          <%= comment.author %> -
+          <%= comment.text %>
+        </p>
+  <%})%>  
+<% if(!username==false){%>
+  <form action="/gallery/<%=photo._id%>/comments"  method="POST">
+    <div class="form-group">
+      <label for="placename">Author</label>
+      <input type="text" id="author" class="form-control" name="cooment[author]"  placeholder="Name" oninvalid="setCustomValidity('cannot be left blank')" required>
+     
+    </div>
+    
+          <div class="form-group">
+                <textarea name="cooment[text]" id="desc" cols="50" rows="4" required ></textarea>
+            </div>
+    <div >
+      <button type="submit" class="btn btn-dark">Submit</button>  
+    </div>
+    
+  </form>
+<% } else{ %>
+
+  <p class="alert alert-warning commentalert">login to creat comment</p>
+<%}%>
+</div>
+
+
+
+
+<% include partials\footer%>

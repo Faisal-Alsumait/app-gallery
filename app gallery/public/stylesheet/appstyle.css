@@ -1,0 +1,72 @@
+.newplace{
+
+   margin-top:10%;
+   margin-left: 35%; 
+   width: 30%;
+   border: 1px solid black;
+   padding: 50px;
+   
+}
+.commentalert{
+    width: 500px;
+}
+#placehead{
+    text-align: center;
+}
+.alert-dark{
+    background: rgb(137, 143, 175);
+    color: #fff;
+}
+.btn-dark{
+    background: black;  
+}
+
+.bg-dark {
+    background-color: #000000 !important;
+}
+.nav-link{
+color: #fff;
+}
+.nav-link:hover{
+    color: #fff;
+    }
+.ml10{
+    margin-left:75%;
+}
+
+#imgcard{
+   height: 200px;
+   width: 100%;
+    
+}
+.jumbotron{
+    margin-top:7%; 
+    height: 210px;
+   
+    padding: 5px;
+    background: url(https://images.pexels.com/photos/417122/pexels-photo-417122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
+  
+    background-size: cover;
+    
+}
+#imgheader{
+    width: 100%;
+    height: 200px;
+}
+.col-md-12{
+    margin-top:80px;
+}
+
+#author{
+    width: 15%;
+}
+.showbody{
+    margin-top: 15%;
+}
+
+.topicplace{
+    margin-left: 23%;
+}
+.containertopic{
+    margin-left: 30%;
+}

@@ -1,0 +1,40 @@
+<% include partials\header%>
+ 
+ 
+<div class="newplace">
+    
+<div class="alert alert-dark" role="alert">
+        New Place
+      </div>
+        <form action="/gallery" method="POST">
+                <div class="form-group">
+                  <label for="placename">Name</label>
+                  <input type="text" class="form-control" name="name"  placeholder="Name">
+                 
+                </div>
+                <div class="form-group">
+                  <label for="">Image</label>
+                  <input type="text" class="form-control" name="image" placeholder="Image">
+                </div>
+                <div class="form-group">
+                    <textarea name="descreption" id="desc" cols="30" rows="5" ></textarea>
+                </div>
+                <div >
+                  <button type="submit" class="btn btn-dark">Submit</button>  
+                </div>
+                
+              </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<% include partials\footer%>
